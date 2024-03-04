@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 70px;
+    height: 70px;
+   
+    
+}
+
+/* Regras para header */
+
+header {
+    background-color: #FBC9D3;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 26px;
+}
+#burguer{
+    cursor: pointer;
+    display: block;
+}
+
+p {
+    font-family: raleway, sans-serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h1,
+h2 {
+    font-family: "Berkshire Swash";
+}
+
+body {
+    background-color: #FBC9D3;
+    position: relative;
+    
+    
+}
+
+/* regras menu burguer */
+menu{
+    display: block;
+    transition: 400ms;
+    
+    
+}
+
+main{
+    color: #000;
+}
+
+
+#menuburguer{
+    transition: 400ms;
+    
+    margin-top: 3px ;
+    z-index: 1;
+    position: fixed;
+    display: none;
+    right: 0;
+    width: 60%;
+    height: 100vh;
+    background-color:#FBC9D3 ;
+}
+
+
+#menuburguer>div{
+    width: 100%;
+    list-style-type: none;
+}
+#menuburguer>div>a{
+    text-decoration: none;
+}
+#menuburguer>div>a>li:hover{
+    background-color: #ff7575;
+    transition: 400ms;
+}
+#menuburguer>div>a>li:active{
+    background-color: #ff7575;
+    transition: 400ms;
+}
+
+#menuburguer>div>a>li{
+    transition: 400ms;
+    background-color: #FFAFBF;
+    margin-top: 9px;
+    padding: 10px;
+    text-align: center;
+
+    color: #2F0D0D;  
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 500;
+    
+}
+
+/* Regras para a parte de bem vindo */
+
+#ct-welcome {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+
+    height: 261px;
+    width: 100%;
+
+    background-image: url(assets/tapete-confeitaria-11-1d52e34968d34c900e16589545362584-480-0\ 1.png);
+}
+
+#ct-welcome>h1 {
+    padding-bottom: 15px;
+
+
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+
+
+}
+
+#ct-welcome>h2 {
+    padding-top: 12px;
+
+    font-family: raleway, sans-serif;
+    font-size: 22.8px;
+    font-style: normal;
+    font-weight: 500;
+
+}
+
+#ct-welcome>p {
+
+
+    padding-top: 12px;
+
+    color: #FFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    width: 318px;
+
+
+
+}
+
+/* Regras para about me */
+#ct-about-me {
+    display: flex;
+    justify-content: center;
+
+}
+
+#profile-pic {
+    z-index: -1;
+
+    position: relative;
+    margin-top: 26px;
+
+}
+
+#ct-about-me>#profile-pic>img {
+    border-radius: 11px;
+    
+    
+
+
+    object-fit: cover;
+    width: 162px;
+    height: 182px;
+
+}
+
+#profile-pic>p {
+    width: 162px;
+    padding: 6px;
+    bottom: 0px;
+    position: absolute;
+    background-color: #A9554E;
+    color: white;
+    font-size: 13px;
+    border-radius: 0px 0px 11px 11px;
+
+}
+
+
+#ct-about-me>p {
+    margin: 27px 0px 0px 2%;
+    width: 198px;
+    height: 191px;
+    text-shadow: none;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+
+
+}
+
+/* regras para opções */
+
+#text-option {
+    color: #FFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Berkshire Swash";
+
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-top: 58px;
+    background-color: #A9554E;
+    width: 100%;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* regras para os cards opções */
+
+
+ #card-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    overflow-x:scroll ;
+    padding-bottom:15px ;
+
+   
+   
+   
+}
+
+
+
+
+
+#brigadeiros{
+    margin-left: 35px;
+}
+
+.card {
+    
+
+   margin: 58px 10px 0px 10px;
+   background-color: #FF9CAF;
+    text-align: center;
+    border-radius: 17px;
+}
+
+.card img {
+    border-radius: 17px 17px 0px 0px;
+    
+    width: 324px;
+    height: 288px;
+    object-fit: cover;
+}
+
+.descricao {
+    margin: 20px;
+    height: 220px;
+}
+.descricao li{
+    font-size: 20px;
+
+}
+.descricao>#bolo>li{
+    font-size: 16px;
+}
+.descricao h3 {
+    font-family: "Berkshire Swash";
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+
+.descricao ul {
+    font-family: raleway;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.descricao>h4{
+    font-family: raleway,sans-serif;
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.card button {
+    width: 324px;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    border-radius: 0 0 15px 15px;
+}
+ .card button:hover{
+    background-color: #ff7575;
+    color: white;
+}
+
+ button:active{
+    background-color: #FF9CAF;
+    color: white;
+}
+
+.card button a {
+    
+
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+    color: #000;
+}
+
+/* regras para footer */
+
+footer{
+    padding-top: 65px;
+    height: 247px;
+    margin-top: 73px;
+    background-color: #FFAFBF;
+    width: 100%;
+}
+
+.contato-footer{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contato-footer>#icon-whatsapp, #icon-email{
+  margin-right: 5px;  
+}
+footer>p{
+    margin: auto;
+   margin-top: 50px;
+    width: 351px;
+    text-align: center;
+}
+
+.contato-footer>img{
+    width: 36px;
+    height: 36px;
+}
+
+@media screen and (min-width:750px) {
+
+
+    #profile-pic{
+        transition: 400ms;
+        margin-bottom: 22px;
+        width: 251px;
+        height: 254px;
+    }
+   #ct-about-me>#text-about {
+    transition: 400ms;
+        font-size: 1.5em;
+        width: 500px;
+        height: 100%;
+    }
+    #profile-pic>p{
+        transition: 400ms;
+        width: 100%;
+        text-align: center;
+        font-size: 1em;
+    }
+    
+    #ct-about-me>#profile-pic>img{
+        transition: 400ms;
+        width: 251px;
+        height: 254px;
+
+    }
+
+    #text-option{
+        transition: 400ms;
+        margin: 0;
+    }
+
+    .card{
+        transition: 400ms;
+        margin: 58px 135px 0px 10px;
+    }
+    
+    #card-wrapper{
+        transition: 400ms;
+        border: 12px solid #A9554E;
+    }
+    
+}
+
+@media screen and (max-width:750px){
+    ::-webkit-scrollbar{
+        display: none;
+    }
+}
