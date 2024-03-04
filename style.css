@@ -115,6 +115,11 @@ main{
     width: 100%;
 
     background-image: url(assets/tapete-confeitaria-11-1d52e34968d34c900e16589545362584-480-0\ 1.png);
+
+     background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #ct-welcome>h1 {
