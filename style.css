@@ -19,7 +19,13 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 20px 26px;
+   
 }
+header>div{
+ display: none;
+    
+}
+
 #burguer{
     cursor: pointer;
     display: block;
@@ -38,17 +44,12 @@ h2 {
 body {
     background-color: #FBC9D3;
     position: relative;
+    transition: 400ms;
     
     
 }
 
 /* regras menu burguer */
-menu{
-    display: block;
-    transition: 400ms;
-    
-    
-}
 
 main{
     color: #000;
@@ -56,37 +57,37 @@ main{
 
 
 #menuburguer{
-    transition: 400ms;
-    
     margin-top: 3px ;
     z-index: 1;
-    position: fixed;
+    
     display: none;
     right: 0;
-    width: 60%;
-    height: 100vh;
+    width: 100%;
+    height: 230px;
     background-color:#FBC9D3 ;
+    transition: 400ms;
 }
 
 
 #menuburguer>div{
     width: 100%;
     list-style-type: none;
+    
 }
 #menuburguer>div>a{
     text-decoration: none;
 }
 #menuburguer>div>a>li:hover{
     background-color: #ff7575;
-    transition: 400ms;
+   
 }
 #menuburguer>div>a>li:active{
     background-color: #ff7575;
-    transition: 400ms;
+   
 }
 
 #menuburguer>div>a>li{
-    transition: 400ms;
+    
     background-color: #FFAFBF;
     margin-top: 9px;
     padding: 10px;
@@ -116,10 +117,7 @@ main{
 
     background-image: url(assets/tapete-confeitaria-11-1d52e34968d34c900e16589545362584-480-0\ 1.png);
 
-     background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
 }
 
 #ct-welcome>h1 {
@@ -179,6 +177,7 @@ main{
 
 #ct-about-me>#profile-pic>img {
     border-radius: 11px;
+    border: 3px solid #FFA4B6;
     
     
 
@@ -371,8 +370,11 @@ footer>p{
 }
 
 @media screen and (min-width:750px) {
-
-
+    
+  
+    #burguer{
+        display: none;
+    }
     #profile-pic{
         transition: 400ms;
         margin-bottom: 22px;
@@ -414,6 +416,25 @@ footer>p{
         border: 12px solid #A9554E;
     }
     
+    header>div{
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        gap: 84px;
+        margin-right: 30px;
+        font-size: 13px;
+        transition: 400ms;
+        
+    }
+    
+    header>div>h1:hover{
+        transition: 400ms;
+    
+        color: white;
+        cursor: pointer;
+     
+    }
 }
 
 @media screen and (max-width:750px){
