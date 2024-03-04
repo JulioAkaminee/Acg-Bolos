@@ -371,7 +371,7 @@ footer>p{
 
 @media screen and (min-width:750px) {
     
-  
+    
     #burguer{
         display: none;
     }
@@ -435,7 +435,7 @@ footer>p{
         cursor: pointer;
      
     }
-}
+
 
 @media screen and (max-width:750px){
     ::-webkit-scrollbar{
